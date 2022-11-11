@@ -9,7 +9,7 @@ public class MainApp {
     //Make Method Scanner
     public static java.util.Scanner scanner = new java.util.Scanner(System.in);
     public static void main(String[] args) {
-        testViewShowTodoList();
+        testViewAddTodoList();
 
     }
 
@@ -201,6 +201,16 @@ public class MainApp {
             addTodoList(todo);
         }
 
+    }
+
+    public static void testViewAddTodoList () {
+        addTodoList("Study Java Programming");
+        addTodoList("Learn English Language");
+        addTodoList("Read Al - Qur'an");
+        addTodoList("Practice Coding");
+
+        viewAddTodoList();
+        showTodoList();
     }
 
     /**
