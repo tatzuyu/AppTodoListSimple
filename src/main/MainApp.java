@@ -9,7 +9,7 @@ public class MainApp {
     //Make Method Scanner
     public static java.util.Scanner scanner = new java.util.Scanner(System.in);
     public static void main(String[] args) {
-        testRemoveTodoList();
+        testInput();
 
     }
 
@@ -137,6 +137,14 @@ public class MainApp {
         System.out.print(info + " : ");
         String data = scanner.nextLine();
         return data;
+    }
+
+    public static void testInput() {
+        var name = input("Nama");
+        System.out.println("Hi " + name);
+
+        var birthDate = input("Tanggal Lahir");
+        System.out.println(birthDate);
     }
 
     /**
