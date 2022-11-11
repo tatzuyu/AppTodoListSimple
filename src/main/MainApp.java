@@ -9,7 +9,7 @@ public class MainApp {
     //Make Method Scanner
     public static java.util.Scanner scanner = new java.util.Scanner(System.in);
     public static void main(String[] args) {
-        testInput();
+        testViewShowTodoList();
 
     }
 
@@ -17,6 +17,7 @@ public class MainApp {
      * Menampilkan Todo List
      */
     public static void showTodoList (){
+        System.out.println("TODOLIST TIRTA");
         for (var i = 0; i < model.length; i++){
             var todo = model[i];
             var no = i + 1;
@@ -158,7 +159,7 @@ public class MainApp {
         System.out.println("2. Hapus ");
         System.out.println("3. Keluar");
 
-        var input = input("Masukkan Pilihan")
+        var input = input("Masukkan Pilihan");
         if (input.equals("1")){
             viewAddTodoList();
         } else if (input.equals("2")) {
@@ -169,6 +170,19 @@ public class MainApp {
         else {
             System.out.println("Pilihan Tidak Ada");
         }
+    }
+
+    /**
+     * Make Method Test View Show Todo List
+     */
+
+    public static void testViewShowTodoList (){
+        addTodoList("Belajar Java Dasar");
+        addTodoList("Belajar Bahasa Inggris");
+        addTodoList("Membaca Al - Qur'an");
+        addTodoList("Mengerjakan Task Hungry");
+        addTodoList("Latihan Ngoding");
+        viewShowTodoList();
     }
 
     /**
