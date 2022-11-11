@@ -191,6 +191,15 @@ public class MainApp {
      * Menampilkan view menambah Todo List
      */
     public static void viewAddTodoList (){
+        System.out.println("===TAMBAH TODOLIST===");
+
+        var todo = input("todo (x Jika Batal)");
+        if(todo.equals("x")){
+            //batal
+        }
+        else {
+            addTodoList(todo);
+        }
 
     }
 
