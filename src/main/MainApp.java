@@ -9,7 +9,7 @@ public class MainApp {
     //Make Method Scanner
     public static java.util.Scanner scanner = new java.util.Scanner(System.in);
     public static void main(String[] args) {
-        testViewAddTodoList();
+        testViewRemoveShowTodoList();
 
     }
 
@@ -230,5 +230,16 @@ public class MainApp {
                 System.out.println("Gagal menghapus todolist " + number);
             }
         }
+    }
+
+    public static void testViewRemoveShowTodoList (){
+        addTodoList("Learn Love Allah SWT");
+        addTodoList("Learn Know Rasullullah SAW");
+        addTodoList("Read Al-Qur'an");
+        addTodoList("Learn Java Programming");
+
+        showTodoList();
+        viewRemoveTodoList();
+        showTodoList();
     }
 }
