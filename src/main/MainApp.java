@@ -152,23 +152,25 @@ public class MainApp {
      * Menampilkan view Todo List
      */
     public static void viewShowTodoList(){
-        showTodoList();
+        while (true){
+            showTodoList();
 
-        System.out.println("===MENU===");
-        System.out.println("1. Tambah ");
-        System.out.println("2. Hapus ");
-        System.out.println("3. Keluar");
+            System.out.println("===MENU===");
+            System.out.println("1. Tambah ");
+            System.out.println("2. Hapus ");
+            System.out.println("3. Keluar");
 
-        var input = input("Masukkan Pilihan");
-        if (input.equals("1")){
-            viewAddTodoList();
-        } else if (input.equals("2")) {
-            viewRemoveTodoList();
-        } else if (input.equals("3")) {
-            break;
-        }
-        else {
-            System.out.println("Pilihan Tidak Ada");
+            var input = input("Masukkan Pilihan");
+            if (input.equals("1")){
+                viewAddTodoList();
+            } else if (input.equals("2")) {
+                viewRemoveTodoList();
+            } else if (input.equals("3")) {
+                break;
+            }
+            else {
+                System.out.println("Pilihan Tidak Ada");
+            }
         }
     }
 
