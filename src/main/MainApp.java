@@ -89,21 +89,32 @@ public class MainApp {
             return false;
         }
         else {
-            model[number - 1] = null ;
+            for (int i = (number - 1) ; i < model.length ; i++) {
+                if (i == ( model.length - 1 )){
+                    model [i] = null;
+                }
+                else {
+                    model[i] = model[i + 1];
+                }
+            }
             return true;
         }
-
     }
 
+    /**
+     * Membuat test menghapus TodoList
+     */
     public static void testRemoveTodoList (){
         addTodoList("Satu");
         addTodoList("Dua");
         addTodoList("Tiga");
+        addTodoList("Empat");
+        addTodoList("Lima");
 
         var result = removeTodoList(20);
         System.out.println(result);
 
-        result = removeTodoList(4);
+        result = removeTodoList(7);
         System.out.println(result);
 
         result = removeTodoList(2);
