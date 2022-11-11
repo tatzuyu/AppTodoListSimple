@@ -209,6 +209,7 @@ public class MainApp {
         addTodoList("Read Al - Qur'an");
         addTodoList("Practice Coding");
 
+        showTodoList();
         viewAddTodoList();
         showTodoList();
     }
