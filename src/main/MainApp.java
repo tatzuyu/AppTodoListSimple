@@ -125,6 +125,14 @@ public class MainApp {
     }
 
     /**
+     *
+     * Add Method input
+     */
+    public static String input (){
+
+    }
+
+    /**
      * Menampilkan view Todo List
      */
     public static void viewShowTodoList(){
