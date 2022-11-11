@@ -1,8 +1,13 @@
 package main;
 
+import java.util.Scanner;
+
 public class MainApp {
 
     public static String [] model = new String [10];
+
+    //Make Method Scanner
+    public static java.util.Scanner scanner = new java.util.Scanner(System.in);
     public static void main(String[] args) {
         testRemoveTodoList();
 
